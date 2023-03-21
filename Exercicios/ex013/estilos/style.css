@@ -1,6 +1,8 @@
+@charset "UTF-8";
+
 body {
     background: rgb(75, 118, 133);
-    font: normal 12pt arial;
+    font: normal 15pt arial;
 }
 
 header {
@@ -12,13 +14,12 @@ section {
     background-color: white;
     border-radius: 30px;
     padding: 2px;
-    width: 500px;
+    width: 300px;
     margin: auto;
 }
 
 div {
-    text-align: center;
-    padding: 5px;
+    margin: 0px;
 }
 
 footer {
