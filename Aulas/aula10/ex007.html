@@ -5,12 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h1 {
+            font: bold 18pt arial;
+            width: 300PX;
+        }
+        input {
+            width: 100px;
+        }
+        #somar {
+            color: blue;
+            background-color: antiquewhite;
+            border: 0px;
+            padding: 5px;
+            border-radius: 20px;
+        }
+        div#res{
+            font: normal 14pt arial;
+            margin-top: 20px;
+            margin-left: 15px;
+        }
+    </style>
 </head>
 <body>
     <h1>Somando Valores</h1>
     <input type="number" name="textn1" id="textn1"> +
     <input type="number" name="textn2" id="textn2">
-    <input type="button" value="Somar" onclick="somar()">
+    <input type="button" value="Somar" onclick="somar()" id="somar">
     <div id="res">Resultado</div>
 
     <script>
@@ -21,7 +42,7 @@
             var n1 = Number(tn1.value)
             var n2 = Number(tn2.value)
             var s = n1 + n2
-            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}`
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
         }
 
         </script>
